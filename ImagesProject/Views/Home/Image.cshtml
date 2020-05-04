@@ -1,8 +1,13 @@
 ﻿@model ImageViewModel
 
-@Model.Image.Title
+<h2>@Model.Image.Title</h2>
 <img src="@Model.Image.Address" />
-<button disabled="@(Model.LikedImage?"true":"false")" id="like-btn" class="btn btn-primary">
-    <i class="fa fa-thumbs-up"></i>
+<br />
+<button @(Model.LikedImage ? "disabled" : "") data-id="@Model.Image.ID" id="like-btn" class="btn btn-primary">
+    Like
 </button>
-@Model.Image.Likes
+<span id="likes">@Model.Image.Likes</span>
+
+@section scripts{
+    <script src="~/js/Image.js"></script>
+}

@@ -44,5 +44,12 @@ namespace ImagesProject.Data
                 context.SaveChanges();
             }
         }
+        public int GetLikes(int id)
+        {
+            using (var context = new ImagesContext(_connectionString))
+            {
+                return context.Images.FirstOrDefault(i => i.ID == id).Likes;
+            }
+        }
     }
 }

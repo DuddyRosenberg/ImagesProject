@@ -17,7 +17,7 @@ namespace ImagesProject.Controllers
 
         public HomeController(IConfiguration configuration)
         {
-            _repository = new ImagesRepository(configuration.GetConnectionString("ConnectionStr"));
+            _repository = new ImagesRepository(configuration.GetConnectionString("ConnectionString"));
         }
         public IActionResult Index()
         {
@@ -41,10 +41,16 @@ namespace ImagesProject.Controllers
                 LikedImage = Request.Cookies[$"LikedImage{id}"] == "Liked"
             });
         }
-        //public IActionResult LikeImage(int id)
-        //{
-        //    Response.Cookies.Append($"LikedImage{id}", "Liked");
-        //    _repository.LikeImage(id);
-        //}
+        [HttpPost]
+        public IActionResult LikeImage(int id)
+        {
+            Response.Cookies.Append($"LikedImage{id}", "Liked");
+            _repository.LikeImage(id);
+            return Json(new { Success = true });
+        }
+        public IActionResult GetLikes(int id)
+        {
+            return Json(new { Likes = _repository.GetLikes(id) });
+        }
     }
 }

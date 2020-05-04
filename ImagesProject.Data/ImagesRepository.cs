@@ -17,7 +17,7 @@ namespace ImagesProject.Data
         {
             using (var context = new ImagesContext(_connectionString))
             {
-                return context.Images.OrderBy(i => i.Date).ToList();
+                return context.Images.OrderByDescending(i => i.Date).ToList();
             }
         }
         public void AddImage(Image image)

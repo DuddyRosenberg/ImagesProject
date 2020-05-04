@@ -1,0 +1,8 @@
+﻿@model ImageViewModel
+
+@Model.Image.Title
+<img src="@Model.Image.Address" />
+<button disabled="@(Model.LikedImage?"true":"false")" id="like-btn" class="btn btn-primary">
+    <i class="fa fa-thumbs-up"></i>
+</button>
+@Model.Image.Likes

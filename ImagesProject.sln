@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagesProject", "ImagesProject\ImagesProject.csproj", "{F8ED9DD4-AA48-4BE2-B5FB-3F5D8911160C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagesProject.Data", "ImagesProject.Data\ImagesProject.Data.csproj", "{0F72FE75-F310-4CB9-B3C1-08DB9A335512}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8ED9DD4-AA48-4BE2-B5FB-3F5D8911160C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8ED9DD4-AA48-4BE2-B5FB-3F5D8911160C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8ED9DD4-AA48-4BE2-B5FB-3F5D8911160C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8ED9DD4-AA48-4BE2-B5FB-3F5D8911160C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F72FE75-F310-4CB9-B3C1-08DB9A335512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F72FE75-F310-4CB9-B3C1-08DB9A335512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F72FE75-F310-4CB9-B3C1-08DB9A335512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F72FE75-F310-4CB9-B3C1-08DB9A335512}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61544D1B-7BA6-4F14-A9AA-B27ACF448E0D}
+	EndGlobalSection
+EndGlobal

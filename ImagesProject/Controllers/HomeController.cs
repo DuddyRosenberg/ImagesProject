@@ -41,10 +41,10 @@ namespace ImagesProject.Controllers
                 LikedImage = Request.Cookies[$"LikedImage{id}"] == "Liked"
             });
         }
-        public IActionResult LikeImage(int id)
-        {
-            Response.Cookies.Append($"LikedImage{id}", "Liked");
-            _repository.LikeImage(id);
-        }
+        //public IActionResult LikeImage(int id)
+        //{
+        //    Response.Cookies.Append($"LikedImage{id}", "Liked");
+        //    _repository.LikeImage(id);
+        //}
     }
 }

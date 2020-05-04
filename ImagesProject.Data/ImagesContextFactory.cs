@@ -16,7 +16,7 @@ namespace ImagesProject.Data
                 .AddJsonFile("appsettings.json")
                 .AddJsonFile("appsettings.local.json", optional: true, reloadOnChange: true).Build();
 
-            return new ImagesContext(config.GetConnectionString("ConStr"));
+            return new ImagesContext(config.GetConnectionString("ConnectionString"));
         }
     }
 }

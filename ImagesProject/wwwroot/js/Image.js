@@ -9,7 +9,7 @@
 
     setInterval(() => {
         updateLikes()
-    }, 100);
+    }, 1000);
 
     $("#like-btn").click(function () {
         $.post('/home/likeimage', { id }, function () {
